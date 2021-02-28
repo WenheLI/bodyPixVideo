@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "typescript": "^4.2.2"
   },
   "dependencies": {
@@ -9,6 +10,7 @@
     "@tensorflow/tfjs-core": "^3.2.0"
   },
   "scripts": {
-    "start": "npx parcel index.html"
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html"
   }
 }
