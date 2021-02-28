@@ -3,8 +3,20 @@
         <title>BodyPix</title>
     </head>
     <body>
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ChPeG19qKUo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-        <canvas style="position: absolute; left: 8; z-index: 111;" width="560" height="315"></canvas>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ChPeG19qKUo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <canvas id="canvas" style="position: absolute; left: 8; z-index: 111;" width="200" height="200"></canvas>
+        <canvas id="side-canvas" style="position: absolute; left: 576; display: none;" width="200" height="200"></canvas>
+
+        <video style="display: none;" id="video" autoplay></video>
+
+        <h2 id="i">Loading</h2>
+
+        <div id="pannel" style="display: flex; flex-direction: row;">
+            <button id="top-left">Top-Left</button>
+            <button id="top-right">Top-Right</button>
+            <button id="bottom-left">Bottom-Left</button>
+            <button id="bottom-right">Bottom-Right</button>
+        </div>
         <script src="./index.ts"></script>
     </body>
 </html>
